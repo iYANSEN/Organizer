@@ -1,0 +1,51 @@
+{
+  "_comment": "Copy this to config.json and fill in your values. config.json is gitignored.",
+  "gemini_api_key": "YOUR_GEMINI_API_KEY_HERE",
+  "imap": {
+    "host": "imap.gmail.com",
+    "port": 993,
+    "user": "your@gmail.com",
+    "password": "your_app_password",
+    "ssl": true
+  },
+  "folders": {
+    "watch": [
+      "~/Downloads",
+      "~/Desktop"
+    ],
+    "organize_root": "~/Organized",
+    "categories": [
+      "Finances",
+      "Work",
+      "Personal",
+      "Receipts",
+      "Travel",
+      "Health",
+      "Legal",
+      "Other"
+    ]
+  },
+  "email": {
+    "labels": [
+      "Finances",
+      "Work",
+      "Newsletters",
+      "Personal",
+      "Receipts",
+      "Travel"
+    ],
+    "archive_label": "Archive",
+    "check_interval_seconds": 60
+  },
+  "ai": {
+    "confidence_threshold_auto": 80,
+    "confidence_threshold_suggest": 50,
+    "baby_ai_enabled": false,
+    "baby_ai_model_path": "./ai/baby_ai/model.pt"
+  },
+  "ui": {
+    "theme": "dark",
+    "notifications": true,
+    "undo_window_seconds": 10
+  }
+}
